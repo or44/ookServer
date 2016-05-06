@@ -6,7 +6,7 @@
     <script src="js/client.js"></script>
     <script type="text/javascript">
 
-
+        
         function ShowNewClient(str) {
             $(function () {
                 $("#dialogMessageClient").text(str); // open the dialog
