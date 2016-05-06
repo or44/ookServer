@@ -57,9 +57,7 @@
             <div class="metro single-size terques login">
                 <asp:Button ID="sumbit" runat="server" CssClass="btn login-btn" Text="Login" OnClick="sumbit_Click"></asp:Button>
             </div>
-            <div>
-
-            </div>
+            <asp:Button ID="Button1" runat="server" Text="Button" />
 
             <div class="login-footer">
                 <div class="forgot-hint pull-right">
