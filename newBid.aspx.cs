@@ -23,7 +23,7 @@ public partial class newBid : System.Web.UI.Page
     }
 
 
-    
+
     protected void BTNsave_Click(object sender, EventArgs e)
     {
         string clientId = Request.Form["ctl00$ContentPlaceHolder1$ddlclients"];
@@ -95,26 +95,26 @@ public partial class newBid : System.Web.UI.Page
         Bid newBid = new Bid(clientId, 1, 1, productName, productType, ProductWidth, productPitch, numberOfColor, percentageOfColor, numberOfLeminate, percentageOfColdGlueCover,
         PercentageOfWhiteColor, percentageOfLacquer, percentageOfCommission, percentageOfDiscount, targetPrice, td, comment, DateTime.Now);
 
-        //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         if (newBid.insertBid() == 1)
         {
             test.Text = "yessssssss";
         }
 
-        int bidId = newBid.getBidId(clientId, newBid.OpeningDate);
+        //int bidId = newBid.getBidId(clientId, newBid.OpeningDate);
 
-        if (cbPrint.Checked == true)
-        {
-            if (rblPrint.SelectedValue == "1")
-            {
-                string machineName = ddlSheka.SelectedValue;
-            }
-            else if (rblPrint.SelectedValue == "2")
-            {
-                string machineName = ddlFlexo.SelectedValue;
-            }
-        }
-        
+        //if (cbPrint.Checked == true)
+        //{
+        //    if (rblPrint.SelectedValue == "1")
+        //    {
+        //        string machineName = ddlSheka.SelectedValue;
+        //    }
+        //    else if (rblPrint.SelectedValue == "2")
+        //    {
+        //        string machineName = ddlFlexo.SelectedValue;
+        //    }
+        //}     //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
     }
 
